@@ -5,6 +5,9 @@ files:
     destination: /home/ec2-user/
   - source: scripts/helloworld.conf
     destination: /etc/init/
+permissions:
+  - object: node_modules/mocha/bin/mocha
+    mode: 777
 hooks:
   BeforeInstall:
     - location: scripts/stop.sh
