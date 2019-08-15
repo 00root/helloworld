@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/lib/jenkins/workspace/HelloworldTest
+    destination: /home/ec2-user/
   - source: scripts/helloworld.conf
     destination: /etc/init/
 hooks:
